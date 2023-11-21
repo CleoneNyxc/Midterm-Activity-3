@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown {
+    text-align: left;
+    padding: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+    padding: 15px;
+    position: relative;
+    min-width: 100px;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    min-width: 100px;
+    padding: 15px;
+    color: white;
+    background-color: #222 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #777;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    min-width: 100px;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    min-width: 100px;
+    color: black;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
