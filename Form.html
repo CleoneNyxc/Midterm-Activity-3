@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head> 
+    <title> Form Elements and Attributes </title>
+
+    <style> //format and styles
+      div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      
+      }
+      legend {
+        padding: 8px;
+        font-size: 20px;
+        text-align: center;
+        background: lightyellow;
+        border: 2px solid;
+        border-radius: 10px
+
+      }
+    </style>
+  </head>
+
+  <body style="background: maroon;">
+    <form action="/form/submit" method="GET or POST">
+      <input type="search" name="search"/> SEARCH <br/><br/>
+  
+    <fieldset style="background: lightyellow; border: 2px solid">
+      <legend> PERSONAL INFORMATION </legend><br/>
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+      }
+ 
+      input[type=number] {
+          -moz-appearance: textfield;
+      }
+    </style>
+
+      <label for="fname"> Name </label>
+      <input type="text" placeholder="Enter Name" id="fname"><br/>
+      <label for="number"> Phone no. </label>
+      <input type="number" placeholder="Enter Phone no." max="11"><br/>
+      <label for="email"> Email </label>
+      <input type="email" placeholder="Enter Email" required><br/><br/>
+      
+    <select>
+      <option> Course </option>
+      <option> BMMA </option>
+      <option> ABPsy </option>
+      <option> BACom </option>
+    </select>
+
+      <input type="date" placeholder="MM/DD/YYYY"> Birth Date <br/>
+      <input type="file"> Upload File <br/>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+    </fieldset><br/>
+
+    <fieldset style="background: lightyellow;">
+      <legend> FAVORITES </legend><br/>
+        <label for="favorite"> Favorite Color </label><br/>
+      <input type="checkbox" name="fradio"> Red
+      <input type="checkbox" name="fradio"> Blue
+      <input type="checkbox" name="fradio"> Green
+      <input type="range"> Enter Rate </input><br/>
+      <input type="image" name="image"> Image
+      <input type="color"> Choose Theme Color <br/>
+      <input type="time"> Choose Time <br/>
+        <input type="datetime"> Date Time <br/>
+        <input type="month"> Month <br/>
+    </fieldset><br/>
+
+    <fieldset style="background: lightyellow;">
+      <label> Username </label>
+      <input type="text" placeholder="Enter Username"><br/>
+      
+      <div class="input-box"> 
+        <label> Password </label>
+        <input type="password" placeholder="Enter Password" required/>
+        <input type="password" placeholder="Re-Enter Password" required/></br></br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="CLEAR">
+
+    </fieldset>
+  </body>
+</html>  
+      

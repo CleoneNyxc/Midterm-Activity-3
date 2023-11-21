@@ -5,14 +5,16 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image: url(head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 1px;
     text-align: center;
 }
 
 nav {
-    background-color: #555;
+    background-color: #67e1ff;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -20,7 +22,7 @@ nav {
 
 nav a {
     display: block;
-    color: white;
+    color: #023d55;
     text-decoration: none;
     text-align: center;
 }
@@ -43,13 +45,13 @@ nav a {
     min-width: 100px;
     padding: 15px;
     color: white;
-    background-color: #222 ;
+    background-color: #023d55 ;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #777;
+    background-color: #67e1ff;
     min-width: 100px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -57,7 +59,7 @@ nav a {
 
 .dropdown-content a {
     min-width: 100px;
-    color: white;
+    color: #023d55;
     padding: 15px 15px;
     text-decoration: none;
     display: block;
@@ -83,20 +85,21 @@ main {
     flex-grow: 1;
 }
 
-iframe:focus {
-    outline: none;
-  }
-  
-  iframe[seamless] {
-    display: block;
-  }
+#iframe-container {
+    flex-basis: 30%;
+}
+
+iframe {
+    width: 1880px;
+    height: 700px; 
+    border: none;
+}
 
 footer {
-    background-color: #333;
+    background-color: #002635;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
 }
